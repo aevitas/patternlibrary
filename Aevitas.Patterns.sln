@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aevitas.Interpreter", "Aevitas.Interpreter\Aevitas.Interpreter.csproj", "{3018C6AF-645D-4D36-A04D-194196C80671}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternTester", "PatternTester\PatternTester.csproj", "{E4B516BD-9206-405E-8520-B9CC907D31B4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3018C6AF-645D-4D36-A04D-194196C80671}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3018C6AF-645D-4D36-A04D-194196C80671}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3018C6AF-645D-4D36-A04D-194196C80671}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3018C6AF-645D-4D36-A04D-194196C80671}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4B516BD-9206-405E-8520-B9CC907D31B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4B516BD-9206-405E-8520-B9CC907D31B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4B516BD-9206-405E-8520-B9CC907D31B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4B516BD-9206-405E-8520-B9CC907D31B4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

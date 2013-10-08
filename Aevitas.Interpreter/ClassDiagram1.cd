@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Aevitas.Interpreter.AdditionExpression" Collapsed="true">
+    <Position X="10.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>AdditionExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aevitas.Interpreter.DivideExpression" Collapsed="true">
+    <Position X="8.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DivideExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aevitas.Interpreter.Expression&lt;T&gt;" Collapsed="true">
+    <Position X="11.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Expression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aevitas.Interpreter.Context" Collapsed="true">
+    <Position X="9" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Expression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aevitas.Interpreter.MultiplyExpression" Collapsed="true">
+    <Position X="12.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MultiplyExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aevitas.Interpreter.NonTerminalExpression&lt;T&gt;" Collapsed="true">
+    <Position X="12.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>NonTerminalExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aevitas.Interpreter.SubtractionExpression" Collapsed="true">
+    <Position X="14" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SubtractionExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aevitas.Interpreter.TerminalExpression&lt;T&gt;" Collapsed="true">
+    <Position X="10.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAgAIAAAAA=</HashCode>
+      <FileName>TerminalExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
