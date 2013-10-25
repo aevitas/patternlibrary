@@ -52,7 +52,18 @@ namespace Aevitas.Observer
         /// </returns>
         public override int GetHashCode()
         {
-            return 18*(Name.GetHashCode()) ^ 10;
+            try
+            {
+                checked
+                {
+                    return 18 * (Name.GetHashCode()) ^ 10;
+                }
+            }
+            catch (OverflowException)
+            {
+                return Name.GetHashCode();
+            }
+            
         }
 
         #endregion

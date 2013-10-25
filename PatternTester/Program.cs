@@ -52,11 +52,22 @@ namespace PatternTester
 
         static void Main(string[] argsv)
         {
-            var subject = new ConcreteSubject("Cooking is fun!");
-            var observer = new CookingBlog(subject);
+            //var subject = new ConcreteSubject("Cooking is fun!");
+            //var observer = new CookingBlog(subject);
 
-            subject.SetState("Cooking sucks!");
-            subject.SetState("Smoking marihuana is good for your health!");
+            //subject.SetState("Cooking sucks!");
+            //subject.SetState("Smoking marihuana is good for your health!");
+
+            checked
+            {
+                int i = 0;
+                i = int.MaxValue;
+
+                var o = i + 1;
+
+                Console.WriteLine(o);
+            }
+
 
             Console.Read();
         }
