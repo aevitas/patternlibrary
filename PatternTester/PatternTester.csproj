@@ -18,7 +18,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;COMMAND</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
@@ -48,6 +48,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Aevitas.Command\Aevitas.Command.csproj">
+      <Project>{8b91235c-f47c-4c49-a14b-497934b503a3}</Project>
+      <Name>Aevitas.Command</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Aevitas.Interpreter\Aevitas.Interpreter.csproj">
       <Project>{3018c6af-645d-4d36-a04d-194196c80671}</Project>
       <Name>Aevitas.Interpreter</Name>

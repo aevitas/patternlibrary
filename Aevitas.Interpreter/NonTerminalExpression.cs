@@ -7,7 +7,7 @@ namespace Aevitas.Interpreter
         public List<TerminalExpression<T>> Expressions { get; set; }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="NonTerminalExpression"/> class.
+        /// Initializes a new instance of the <see cref="NonTerminalExpression" /> class.
         /// </summary>
         /// <param name="args">The arguments.</param>
         public NonTerminalExpression(params TerminalExpression<T>[] args)

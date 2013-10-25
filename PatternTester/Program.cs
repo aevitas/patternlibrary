@@ -1,11 +1,13 @@
 ﻿
 using System;
+using Aevitas.Command;
 using Aevitas.Interpreter;
 
 namespace PatternTester
 {
     class Program
     {
+#if INTERPRETER
         private static readonly TerminalExpression<int> Left = new TerminalExpression<int>(10);
         private static readonly TerminalExpression<int> Right = new TerminalExpression<int>(8);
 
@@ -32,5 +34,17 @@ namespace PatternTester
 
             Console.Read();
         }
+#endif
+
+#if COMMAND
+
+        static void Main(string[] args)
+        {
+            Client.Run();
+
+            Console.ReadLine();
+        }
+
+#endif
     }
 }
