@@ -2,6 +2,7 @@
 using System;
 using Aevitas.Command;
 using Aevitas.Interpreter;
+using Aevitas.Observer;
 
 namespace PatternTester
 {
@@ -43,6 +44,21 @@ namespace PatternTester
             Client.Run();
 
             Console.ReadLine();
+        }
+
+#endif
+
+#if OBSERVER
+
+        static void Main(string[] argsv)
+        {
+            var subject = new ConcreteSubject("Cooking is fun!");
+            var observer = new CookingBlog(subject);
+
+            subject.SetState("Cooking sucks!");
+            subject.SetState("Smoking marihuana is good for your health!");
+
+            Console.Read();
         }
 
 #endif

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternTester", "PatternTes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aevitas.Command", "Aevitas.Command\Aevitas.Command.csproj", "{8B91235C-F47C-4C49-A14B-497934B503A3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aevitas.Observer", "Aevitas.Observer\Aevitas.Observer.csproj", "{C71F27F0-4503-48AD-A34F-D3FC9D1B8C7B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{8B91235C-F47C-4C49-A14B-497934B503A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B91235C-F47C-4C49-A14B-497934B503A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B91235C-F47C-4C49-A14B-497934B503A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C71F27F0-4503-48AD-A34F-D3FC9D1B8C7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C71F27F0-4503-48AD-A34F-D3FC9D1B8C7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C71F27F0-4503-48AD-A34F-D3FC9D1B8C7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C71F27F0-4503-48AD-A34F-D3FC9D1B8C7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
