@@ -2,12 +2,14 @@
 using System;
 using System.Threading;
 using Aevitas.Command;
+using Aevitas.Composite;
 using Aevitas.Interpreter;
 using Aevitas.Mediator;
 using Aevitas.Mediator.Colleagues;
 using Aevitas.MementoPattern;
 using Aevitas.Observer;
 using Aevitas.State.States;
+using Action = Aevitas.Composite.Action;
 
 namespace PatternTester
 {
@@ -107,7 +109,6 @@ namespace PatternTester
 #endif
 
 #if MEMENTO
-
         static void Main(string[] argsv)
         {
             var careTaker = new Caretaker();
@@ -148,7 +149,26 @@ namespace PatternTester
 
             Console.ReadLine();
         }
-
 #endif
+
+#if COMPOSITE
+        static void Main(string[] argsv)
+        {
+            // Since the API of our composite code is constructor based, you get a pretty simple overview of the actual "tree".
+            var tree = new Composite(new Action(() => Console.WriteLine("First leaf of the tree")),
+                new Action(() => Console.ForegroundColor = ConsoleColor.Yellow),
+                new Action(() => Console.WriteLine("Third leaf of the tree")),
+                new Action(() => Console.ForegroundColor = ConsoleColor.Magenta),
+                new Action(() => Console.WriteLine("Fifth lead of the tree")));
+
+            Console.WriteLine("Press enter to actually execute the tree.");
+            Console.ReadLine();
+
+            tree.Execute();
+
+            Console.ReadLine();
+        }
+#endif
+
     }
 }
