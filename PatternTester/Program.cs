@@ -5,6 +5,7 @@ using Aevitas.Interpreter;
 using Aevitas.Mediator;
 using Aevitas.Mediator.Colleagues;
 using Aevitas.Observer;
+using Aevitas.State.States;
 
 namespace PatternTester
 {
@@ -80,6 +81,25 @@ namespace PatternTester
             sendingColleague.Send("Foobar!");
 
             Console.Read();
+        }
+
+#endif
+
+#if STATE
+
+        static void Main(string[] argsv)
+        {
+            var number = 0;
+
+            var ctx = new Aevitas.State.Context(new IdleState());
+
+            while (true)
+            {
+                Console.WriteLine("Enter a number and hit enter:");
+                var n = Console.ReadLine();
+
+                ctx.Pulse(n);
+            }
         }
 
 #endif
