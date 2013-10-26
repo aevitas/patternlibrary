@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aevitas.Command", "Aevitas.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aevitas.Observer", "Aevitas.Observer\Aevitas.Observer.csproj", "{C71F27F0-4503-48AD-A34F-D3FC9D1B8C7B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aevitas.Mediator", "Aevitas.Mediator\Aevitas.Mediator.csproj", "{EF66FBAC-911D-48A2-9F50-CDD530D46711}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{C71F27F0-4503-48AD-A34F-D3FC9D1B8C7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C71F27F0-4503-48AD-A34F-D3FC9D1B8C7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C71F27F0-4503-48AD-A34F-D3FC9D1B8C7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF66FBAC-911D-48A2-9F50-CDD530D46711}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF66FBAC-911D-48A2-9F50-CDD530D46711}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF66FBAC-911D-48A2-9F50-CDD530D46711}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF66FBAC-911D-48A2-9F50-CDD530D46711}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

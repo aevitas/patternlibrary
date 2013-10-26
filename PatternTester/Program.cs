@@ -2,6 +2,8 @@
 using System;
 using Aevitas.Command;
 using Aevitas.Interpreter;
+using Aevitas.Mediator;
+using Aevitas.Mediator.Colleagues;
 using Aevitas.Observer;
 
 namespace PatternTester
@@ -52,22 +54,30 @@ namespace PatternTester
 
         static void Main(string[] argsv)
         {
-            //var subject = new ConcreteSubject("Cooking is fun!");
-            //var observer = new CookingBlog(subject);
+            var subject = new ConcreteSubject("Cooking is fun!");
+            var observer = new CookingBlog(subject);
+            var observer2 = new CookingBlog(subject);
 
-            //subject.SetState("Cooking sucks!");
-            //subject.SetState("Smoking marihuana is good for your health!");
+            subject.SetState("Cooking sucks!");
+            subject.SetState("Smoking marihuana is good for your health!");
 
-            checked
-            {
-                int i = 0;
-                i = int.MaxValue;
+            Console.Read();
+        }
 
-                var o = i + 1;
+#endif
 
-                Console.WriteLine(o);
-            }
+#if MEDIATOR
 
+        static void Main(string[] argsv)
+        {
+            var mediator = new ConcreteMediator();
+
+            var colleagueOne = new ColleagueOne(mediator);
+            var colleagueTwo = new ColleagueTwo(mediator);
+
+            var sendingColleague = new ColleagueSender(mediator);
+
+            sendingColleague.Send("Foobar!");
 
             Console.Read();
         }
