@@ -34,7 +34,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <PlatformTarget>x86</PlatformTarget>
     <OutputPath>bin\x86\Debug\</OutputPath>
-    <DefineConstants>STATE</DefineConstants>
+    <DefineConstants>MEMENTO</DefineConstants>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
     <PlatformTarget>x86</PlatformTarget>
@@ -68,6 +68,10 @@
     <ProjectReference Include="..\Aevitas.Mediator\Aevitas.Mediator.csproj">
       <Project>{ef66fbac-911d-48a2-9f50-cdd530d46711}</Project>
       <Name>Aevitas.Mediator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Aevitas.Memento\Aevitas.Memento.csproj">
+      <Project>{d69d2075-06a2-4c83-87e8-a9e42c921c6f}</Project>
+      <Name>Aevitas.Memento</Name>
     </ProjectReference>
     <ProjectReference Include="..\Aevitas.Observer\Aevitas.Observer.csproj">
       <Project>{c71f27f0-4503-48ad-a34f-d3fc9d1b8c7b}</Project>

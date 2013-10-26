@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aevitas.Mediator", "Aevitas
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aevitas.State", "Aevitas.State\Aevitas.State.csproj", "{BF49C56A-B100-4E1B-BED3-F542A9476A96}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aevitas.Memento", "Aevitas.Memento\Aevitas.Memento.csproj", "{D69D2075-06A2-4C83-87E8-A9E42C921C6F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,16 @@ Global
 		{BF49C56A-B100-4E1B-BED3-F542A9476A96}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{BF49C56A-B100-4E1B-BED3-F542A9476A96}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{BF49C56A-B100-4E1B-BED3-F542A9476A96}.Release|x86.ActiveCfg = Release|Any CPU
+		{D69D2075-06A2-4C83-87E8-A9E42C921C6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D69D2075-06A2-4C83-87E8-A9E42C921C6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D69D2075-06A2-4C83-87E8-A9E42C921C6F}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{D69D2075-06A2-4C83-87E8-A9E42C921C6F}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{D69D2075-06A2-4C83-87E8-A9E42C921C6F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D69D2075-06A2-4C83-87E8-A9E42C921C6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D69D2075-06A2-4C83-87E8-A9E42C921C6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D69D2075-06A2-4C83-87E8-A9E42C921C6F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{D69D2075-06A2-4C83-87E8-A9E42C921C6F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{D69D2075-06A2-4C83-87E8-A9E42C921C6F}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,9 +1,11 @@
 ﻿
 using System;
+using System.Threading;
 using Aevitas.Command;
 using Aevitas.Interpreter;
 using Aevitas.Mediator;
 using Aevitas.Mediator.Colleagues;
+using Aevitas.MementoPattern;
 using Aevitas.Observer;
 using Aevitas.State.States;
 
@@ -100,6 +102,51 @@ namespace PatternTester
 
                 ctx.Pulse(n);
             }
+        }
+
+#endif
+
+#if MEMENTO
+
+        static void Main(string[] argsv)
+        {
+            var careTaker = new Caretaker();
+
+            var timeWarden = new TimeWarden();
+
+            // Add a memento of this guy's current state.
+            Console.WriteLine("Changing state of TimeWarden object and creating three mementos..\n");
+            timeWarden.CurrentState = Guid.NewGuid().ToString().Trim('-');
+            Console.WriteLine("State: {0}", timeWarden.CurrentState);
+            careTaker.AddMemento(timeWarden.GetMemento());
+            Thread.Sleep(500);
+
+            timeWarden.CurrentState = Guid.NewGuid().ToString().Trim('-');
+            Console.WriteLine("State: {0}", timeWarden.CurrentState);
+            careTaker.AddMemento(timeWarden.GetMemento());
+
+            Thread.Sleep(500);
+
+            timeWarden.CurrentState = Guid.NewGuid().ToString().Trim('-');
+            Console.WriteLine("State: {0}", timeWarden.CurrentState);
+            careTaker.AddMemento(timeWarden.GetMemento());
+
+            Console.WriteLine("\nDone. Retrieving mementos in 1 second (reverse order)..\n\n");
+            
+            Thread.Sleep(1000);
+
+            timeWarden.SetMemento(careTaker.NextMemento);
+            Console.WriteLine(timeWarden);
+
+            timeWarden.SetMemento(careTaker.NextMemento);
+            Console.WriteLine(timeWarden);
+
+            timeWarden.SetMemento(careTaker.NextMemento);
+            Console.WriteLine(timeWarden);
+
+            Console.WriteLine("\n\nDone retrieving mementos.. Caretaker out!");
+
+            Console.ReadLine();
         }
 
 #endif
