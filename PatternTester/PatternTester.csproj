@@ -34,7 +34,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <PlatformTarget>x86</PlatformTarget>
     <OutputPath>bin\x86\Debug\</OutputPath>
-    <DefineConstants>STRATEGY</DefineConstants>
+    <DefineConstants>BRIDGE</DefineConstants>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
     <PlatformTarget>x86</PlatformTarget>
@@ -57,6 +57,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Aevitas.Bridge\Aevitas.Bridge.csproj">
+      <Project>{836a1953-e3c1-4dcd-a888-abce73877762}</Project>
+      <Name>Aevitas.Bridge</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Aevitas.ChainOfResponsibility\Aevitas.ChainOfResponsibility.csproj">
       <Project>{5488f02a-1e90-4969-9ec9-c97b98c0c4a2}</Project>
       <Name>Aevitas.ChainOfResponsibility</Name>

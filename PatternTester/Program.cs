@@ -1,6 +1,8 @@
 ﻿
 using System;
 using System.Threading;
+using Aevitas.Bridge;
+using Aevitas.Bridge.MessageProviders;
 using Aevitas.ChainOfResponsibility.Handlers;
 using Aevitas.Command;
 using Aevitas.Composite;
@@ -211,6 +213,25 @@ namespace PatternTester
             // Let's take one in the head for laughs.
             player.TakeHit(head, 1);
             Console.WriteLine("Remaining health: {0}", player.Health);
+
+            Console.ReadLine();
+        }
+#endif
+
+#if BRIDGE
+        static void Main(string[] argsv)
+        {
+            var red = new RedMessageProvider();
+            var yellow = new YellowMessageProvider();
+            var green = new GreenMessageProvider();
+
+            Abstraction.WriteMessage("This one should be written by the default green provider.");
+            Abstraction.CurrentProvider = yellow;
+            Abstraction.WriteMessage("This one should be handled by the yellow one.");
+            Abstraction.CurrentProvider = red;
+            Abstraction.WriteMessage("And this one should be done by the red one.");
+            Abstraction.CurrentProvider = green;
+            Abstraction.WriteMessage("And green again!");
 
             Console.ReadLine();
         }
