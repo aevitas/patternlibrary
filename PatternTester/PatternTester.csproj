@@ -34,7 +34,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <PlatformTarget>x86</PlatformTarget>
     <OutputPath>bin\x86\Debug\</OutputPath>
-    <DefineConstants>DECORATOR</DefineConstants>
+    <DefineConstants>PROXY</DefineConstants>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
     <PlatformTarget>x86</PlatformTarget>
@@ -92,6 +92,10 @@
     <ProjectReference Include="..\Aevitas.Observer\Aevitas.Observer.csproj">
       <Project>{c71f27f0-4503-48ad-a34f-d3fc9d1b8c7b}</Project>
       <Name>Aevitas.Observer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Aevitas.Proxy\Aevitas.Proxy.csproj">
+      <Project>{2a931de7-aca7-4ea8-a7c5-12deac2f41c8}</Project>
+      <Name>Aevitas.Proxy</Name>
     </ProjectReference>
     <ProjectReference Include="..\Aevitas.State\Aevitas.State.csproj">
       <Project>{bf49c56a-b100-4e1b-bed3-f542a9476a96}</Project>

@@ -12,6 +12,7 @@ using Aevitas.Mediator;
 using Aevitas.Mediator.Colleagues;
 using Aevitas.MementoPattern;
 using Aevitas.Observer;
+using Aevitas.Proxy;
 using Aevitas.State.States;
 using Aevitas.ChainOfResponsibility;
 using Aevitas.Strategy;
@@ -248,6 +249,22 @@ namespace PatternTester
             write.Operation();
             green.Operation();
             red.Operation();
+
+            Console.ReadLine();
+        }
+#endif
+
+#if PROXY
+        static void Main(string[] argsv)
+        {
+            Console.WriteLine("First calculation will take 5 seconds, the other 9 will come from the proxy caching it, and will be near-instant.");
+
+            var proxy = new MultiplierProxy();
+
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine(proxy.Multiply(5, 5));
+            }
 
             Console.ReadLine();
         }
