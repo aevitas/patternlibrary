@@ -34,7 +34,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <PlatformTarget>x86</PlatformTarget>
     <OutputPath>bin\x86\Debug\</OutputPath>
-    <DefineConstants>CHAINOFRESPONS</DefineConstants>
+    <DefineConstants>STRATEGY</DefineConstants>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
     <PlatformTarget>x86</PlatformTarget>
@@ -88,6 +88,10 @@
     <ProjectReference Include="..\Aevitas.State\Aevitas.State.csproj">
       <Project>{bf49c56a-b100-4e1b-bed3-f542a9476a96}</Project>
       <Name>Aevitas.State</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Aevitas.Strategy\Aevitas.Strategy.csproj">
+      <Project>{ce250123-8843-4ff9-a1b7-f7669b34cdfd}</Project>
+      <Name>Aevitas.Strategy</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

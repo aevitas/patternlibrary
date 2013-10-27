@@ -11,6 +11,8 @@ using Aevitas.MementoPattern;
 using Aevitas.Observer;
 using Aevitas.State.States;
 using Aevitas.ChainOfResponsibility;
+using Aevitas.Strategy;
+using Aevitas.Strategy.HitBoxes;
 using Action = Aevitas.Composite.Action;
 
 namespace PatternTester
@@ -180,6 +182,35 @@ namespace PatternTester
             var floatHandler = new FloatHandler();
 
             RequestManager.Send<uint>(RequestType.UnsignedInteger, 5);
+
+            Console.ReadLine();
+        }
+#endif
+
+#if STRATEGY
+        static void Main(string[] argsv)
+        {
+            // Let's construct our body parts. Yay!
+            var head = new HeadBox();
+            var legs = new LegsBox();
+            var arms = new ArmsBox();
+            var torso = new TorsoBox();
+
+            // Now let's take a couple of hits.
+            var player = new Player();
+
+            player.TakeHit(legs, 1); // One hit in the leg.
+            player.TakeHit(torso, 2); // Two in the torso.
+            player.TakeHit(arms, 1); // And one in the arm.
+
+            // So that should be 10+20+20+10=60 damage, 40 health left:
+            Console.WriteLine("Remaining health: {0}", player.Health);
+
+            Console.ReadLine();
+
+            // Let's take one in the head for laughs.
+            player.TakeHit(head, 1);
+            Console.WriteLine("Remaining health: {0}", player.Health);
 
             Console.ReadLine();
         }
