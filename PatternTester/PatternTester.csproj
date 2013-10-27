@@ -34,7 +34,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <PlatformTarget>x86</PlatformTarget>
     <OutputPath>bin\x86\Debug\</OutputPath>
-    <DefineConstants>BRIDGE</DefineConstants>
+    <DefineConstants>DECORATOR</DefineConstants>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
     <PlatformTarget>x86</PlatformTarget>
@@ -72,6 +72,10 @@
     <ProjectReference Include="..\Aevitas.Composite\Aevitas.Composite.csproj">
       <Project>{612a3dfa-056e-4bfc-b6e6-b8e491a6384a}</Project>
       <Name>Aevitas.Composite</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Aevitas.Decorator\Aevitas.Decorator.csproj">
+      <Project>{ba8c9e3c-7b35-4ecf-9aaf-bcaf289b1c16}</Project>
+      <Name>Aevitas.Decorator</Name>
     </ProjectReference>
     <ProjectReference Include="..\Aevitas.Interpreter\Aevitas.Interpreter.csproj">
       <Project>{3018c6af-645d-4d36-a04d-194196c80671}</Project>

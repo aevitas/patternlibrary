@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aevitas.Strategy", "Aevitas
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aevitas.Bridge", "Aevitas.Bridge\Aevitas.Bridge.csproj", "{836A1953-E3C1-4DCD-A888-ABCE73877762}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aevitas.Decorator", "Aevitas.Decorator\Aevitas.Decorator.csproj", "{BA8C9E3C-7B35-4ECF-9AAF-BCAF289B1C16}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +155,16 @@ Global
 		{836A1953-E3C1-4DCD-A888-ABCE73877762}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{836A1953-E3C1-4DCD-A888-ABCE73877762}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{836A1953-E3C1-4DCD-A888-ABCE73877762}.Release|x86.ActiveCfg = Release|Any CPU
+		{BA8C9E3C-7B35-4ECF-9AAF-BCAF289B1C16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA8C9E3C-7B35-4ECF-9AAF-BCAF289B1C16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA8C9E3C-7B35-4ECF-9AAF-BCAF289B1C16}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{BA8C9E3C-7B35-4ECF-9AAF-BCAF289B1C16}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{BA8C9E3C-7B35-4ECF-9AAF-BCAF289B1C16}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BA8C9E3C-7B35-4ECF-9AAF-BCAF289B1C16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA8C9E3C-7B35-4ECF-9AAF-BCAF289B1C16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA8C9E3C-7B35-4ECF-9AAF-BCAF289B1C16}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{BA8C9E3C-7B35-4ECF-9AAF-BCAF289B1C16}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{BA8C9E3C-7B35-4ECF-9AAF-BCAF289B1C16}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

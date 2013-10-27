@@ -6,6 +6,7 @@ using Aevitas.Bridge.MessageProviders;
 using Aevitas.ChainOfResponsibility.Handlers;
 using Aevitas.Command;
 using Aevitas.Composite;
+using Aevitas.Decorator;
 using Aevitas.Interpreter;
 using Aevitas.Mediator;
 using Aevitas.Mediator.Colleagues;
@@ -232,6 +233,21 @@ namespace PatternTester
             Abstraction.WriteMessage("And this one should be done by the red one.");
             Abstraction.CurrentProvider = green;
             Abstraction.WriteMessage("And green again!");
+
+            Console.ReadLine();
+        }
+#endif
+
+#if DECORATOR
+        static void Main(string[] argsv)
+        {
+            var write = new WritingFunctionality();
+            var green = new GreenWritingDecorator(write);
+            var red = new RedWritingDecorator(write);
+
+            write.Operation();
+            green.Operation();
+            red.Operation();
 
             Console.ReadLine();
         }
