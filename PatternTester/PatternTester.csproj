@@ -34,7 +34,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <PlatformTarget>x86</PlatformTarget>
     <OutputPath>bin\x86\Debug\</OutputPath>
-    <DefineConstants>PROXY</DefineConstants>
+    <DefineConstants>ADAPTER</DefineConstants>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
     <PlatformTarget>x86</PlatformTarget>
@@ -57,6 +57,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Aevitas.Adapter\Aevitas.Adapter.csproj">
+      <Project>{9f3ceb3f-dc11-4c5f-b183-0cec2ecfc7e5}</Project>
+      <Name>Aevitas.Adapter</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Aevitas.Bridge\Aevitas.Bridge.csproj">
       <Project>{836a1953-e3c1-4dcd-a888-abce73877762}</Project>
       <Name>Aevitas.Bridge</Name>

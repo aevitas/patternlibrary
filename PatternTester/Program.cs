@@ -1,6 +1,8 @@
 ﻿
 using System;
+using System.Runtime.InteropServices;
 using System.Threading;
+using Aevitas.Adapter;
 using Aevitas.Bridge;
 using Aevitas.Bridge.MessageProviders;
 using Aevitas.ChainOfResponsibility.Handlers;
@@ -265,6 +267,23 @@ namespace PatternTester
             {
                 Console.WriteLine(proxy.Multiply(5, 5));
             }
+
+            Console.ReadLine();
+        }
+#endif
+
+#if ADAPTER
+        static void Main(string[] argsv)
+        {
+            var adaptee = new Adaptee();
+            var adapter = new Adapter(adaptee, 15, 67);
+            var client = new Aevitas.Adapter.Client(adapter);
+
+            client.Calculate();
+
+            Console.WriteLine("\n\n");
+
+            client.Report();
 
             Console.ReadLine();
         }
