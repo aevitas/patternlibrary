@@ -1,6 +1,7 @@
 ﻿
 using System;
 using System.Threading;
+using Aevitas.ChainOfResponsibility.Handlers;
 using Aevitas.Command;
 using Aevitas.Composite;
 using Aevitas.Interpreter;
@@ -9,6 +10,7 @@ using Aevitas.Mediator.Colleagues;
 using Aevitas.MementoPattern;
 using Aevitas.Observer;
 using Aevitas.State.States;
+using Aevitas.ChainOfResponsibility;
 using Action = Aevitas.Composite.Action;
 
 namespace PatternTester
@@ -165,6 +167,19 @@ namespace PatternTester
             Console.ReadLine();
 
             tree.Execute();
+
+            Console.ReadLine();
+        }
+#endif
+
+#if CHAINOFRESPONS
+        static void Main(string[] argsv)
+        {
+            var doubleHandler = new DoubleHandler();
+            var intHandler = new IntegerHandler();
+            var floatHandler = new FloatHandler();
+
+            RequestManager.Send<uint>(RequestType.UnsignedInteger, 5);
 
             Console.ReadLine();
         }

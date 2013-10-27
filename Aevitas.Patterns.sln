@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aevitas.Memento", "Aevitas.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aevitas.Composite", "Aevitas.Composite\Aevitas.Composite.csproj", "{612A3DFA-056E-4BFC-B6E6-B8E491A6384A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aevitas.ChainOfResponsibility", "Aevitas.ChainOfResponsibility\Aevitas.ChainOfResponsibility.csproj", "{5488F02A-1E90-4969-9EC9-C97B98C0C4A2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,16 @@ Global
 		{612A3DFA-056E-4BFC-B6E6-B8E491A6384A}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{612A3DFA-056E-4BFC-B6E6-B8E491A6384A}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{612A3DFA-056E-4BFC-B6E6-B8E491A6384A}.Release|x86.ActiveCfg = Release|Any CPU
+		{5488F02A-1E90-4969-9EC9-C97B98C0C4A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5488F02A-1E90-4969-9EC9-C97B98C0C4A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5488F02A-1E90-4969-9EC9-C97B98C0C4A2}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{5488F02A-1E90-4969-9EC9-C97B98C0C4A2}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{5488F02A-1E90-4969-9EC9-C97B98C0C4A2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5488F02A-1E90-4969-9EC9-C97B98C0C4A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5488F02A-1E90-4969-9EC9-C97B98C0C4A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5488F02A-1E90-4969-9EC9-C97B98C0C4A2}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{5488F02A-1E90-4969-9EC9-C97B98C0C4A2}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{5488F02A-1E90-4969-9EC9-C97B98C0C4A2}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

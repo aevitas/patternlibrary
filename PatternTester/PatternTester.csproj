@@ -34,7 +34,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <PlatformTarget>x86</PlatformTarget>
     <OutputPath>bin\x86\Debug\</OutputPath>
-    <DefineConstants>COMPOSITE</DefineConstants>
+    <DefineConstants>CHAINOFRESPONS</DefineConstants>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
     <PlatformTarget>x86</PlatformTarget>
@@ -57,6 +57,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Aevitas.ChainOfResponsibility\Aevitas.ChainOfResponsibility.csproj">
+      <Project>{5488f02a-1e90-4969-9ec9-c97b98c0c4a2}</Project>
+      <Name>Aevitas.ChainOfResponsibility</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Aevitas.Command\Aevitas.Command.csproj">
       <Project>{8b91235c-f47c-4c49-a14b-497934b503a3}</Project>
       <Name>Aevitas.Command</Name>
