@@ -9,6 +9,7 @@ using Aevitas.ChainOfResponsibility.Handlers;
 using Aevitas.Command;
 using Aevitas.Composite;
 using Aevitas.Decorator;
+using Aevitas.Flyweight;
 using Aevitas.Interpreter;
 using Aevitas.Mediator;
 using Aevitas.Mediator.Colleagues;
@@ -284,6 +285,35 @@ namespace PatternTester
             Console.WriteLine("\n\n");
 
             client.Report();
+
+            Console.ReadLine();
+        }
+#endif
+
+#if FLYWEIGHT
+        static void Main(string[] argsv)
+        {
+            var target = new Target
+            {
+                Unit = UnitFactory.CreateUnit(UnitType.Tank),
+                Guid = Guid.NewGuid()
+            };
+
+            var otherTarget = new Target
+            {
+                Unit = UnitFactory.CreateUnit(UnitType.Tank),
+                Guid = Guid.NewGuid()
+            };
+
+            bool b = otherTarget.Unit == target.Unit;
+            int fp = target.Unit.Power;
+
+            Console.WriteLine("Equals: {0}", b);
+            Console.WriteLine("Power: {0}", fp);
+
+            target.Unit.Power = 12;
+
+            Console.WriteLine("Still equal: {0}", target.Unit == otherTarget.Unit);
 
             Console.ReadLine();
         }

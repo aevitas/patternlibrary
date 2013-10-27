@@ -34,7 +34,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <PlatformTarget>x86</PlatformTarget>
     <OutputPath>bin\x86\Debug\</OutputPath>
-    <DefineConstants>ADAPTER</DefineConstants>
+    <DefineConstants>FLYWEIGHT</DefineConstants>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
     <PlatformTarget>x86</PlatformTarget>
@@ -80,6 +80,10 @@
     <ProjectReference Include="..\Aevitas.Decorator\Aevitas.Decorator.csproj">
       <Project>{ba8c9e3c-7b35-4ecf-9aaf-bcaf289b1c16}</Project>
       <Name>Aevitas.Decorator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Aevitas.Flyweight\Aevitas.Flyweight.csproj">
+      <Project>{07de8206-6863-426c-b785-5aae8815f8ba}</Project>
+      <Name>Aevitas.Flyweight</Name>
     </ProjectReference>
     <ProjectReference Include="..\Aevitas.Interpreter\Aevitas.Interpreter.csproj">
       <Project>{3018c6af-645d-4d36-a04d-194196c80671}</Project>

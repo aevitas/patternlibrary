@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aevitas.Proxy", "Aevitas.Pr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aevitas.Adapter", "Aevitas.Adapter\Aevitas.Adapter.csproj", "{9F3CEB3F-DC11-4C5F-B183-0CEC2ECFC7E5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aevitas.Flyweight", "Aevitas.Flyweight\Aevitas.Flyweight.csproj", "{07DE8206-6863-426C-B785-5AAE8815F8BA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -189,6 +191,16 @@ Global
 		{9F3CEB3F-DC11-4C5F-B183-0CEC2ECFC7E5}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{9F3CEB3F-DC11-4C5F-B183-0CEC2ECFC7E5}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{9F3CEB3F-DC11-4C5F-B183-0CEC2ECFC7E5}.Release|x86.ActiveCfg = Release|Any CPU
+		{07DE8206-6863-426C-B785-5AAE8815F8BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07DE8206-6863-426C-B785-5AAE8815F8BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07DE8206-6863-426C-B785-5AAE8815F8BA}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{07DE8206-6863-426C-B785-5AAE8815F8BA}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{07DE8206-6863-426C-B785-5AAE8815F8BA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{07DE8206-6863-426C-B785-5AAE8815F8BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07DE8206-6863-426C-B785-5AAE8815F8BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07DE8206-6863-426C-B785-5AAE8815F8BA}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{07DE8206-6863-426C-B785-5AAE8815F8BA}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{07DE8206-6863-426C-B785-5AAE8815F8BA}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
