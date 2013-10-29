@@ -5,6 +5,7 @@ using System.Threading;
 using Aevitas.Adapter;
 using Aevitas.Bridge;
 using Aevitas.Bridge.MessageProviders;
+using Aevitas.Builder;
 using Aevitas.ChainOfResponsibility.Handlers;
 using Aevitas.Command;
 using Aevitas.Composite;
@@ -314,6 +315,27 @@ namespace PatternTester
             target.Unit.Power = 12;
 
             Console.WriteLine("Still equal: {0}", target.Unit == otherTarget.Unit);
+
+            Console.ReadLine();
+        }
+#endif
+
+#if BUILDER
+        static void Main(string[] argsv)
+        {
+            var breakfastBuilder = new BreakfastMealBuilder();
+            var lunchBuilder = new LunchMealBuilder();
+            var munchBuilder = new MunchMealBuilder();
+
+            var breakfast = Orders.MakeMeal(breakfastBuilder);
+            var lunch = Orders.MakeMeal(lunchBuilder);
+            var munch = Orders.MakeMeal(munchBuilder);
+
+            Console.WriteLine(breakfast);
+            Console.WriteLine(lunch);
+            Console.WriteLine(munch);
+
+            Console.WriteLine();
 
             Console.ReadLine();
         }
